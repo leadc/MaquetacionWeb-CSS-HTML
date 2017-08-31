@@ -1,13 +1,19 @@
 /*propiedad display: none, block, inline, inline-block 
 para mostrar elementos de bloque como de linea y 
 de linea como de bloque o hacer desaparecer elementos
+
+
+css3 generator
+
 */
 
 div {
-    --tamanio: 5rem;
-    padding: 8%;
+
+    width: 15px;
+    height: 15px;
     background-color: green;
-    border: 1px solid brown;
-    display: inline-flex;
-    margin: 0;
+    margin: 1px;
+
+	-webkit-box-shadow: 15px 15px 20px 5px rgba(10,10,10,1);
+	box-shadow: 15px 15px 20px 5px rgba(10,10,10,1);
 }

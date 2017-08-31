@@ -1,0 +1,36 @@
+/*
+Se usa para trabajar con responsive, display flex al padre para que se comporte de manera flexible
+flex-direction:row  para indicar que los elementos se organicen como fila valores "row - row-reverse - column - column-reverse"
+align-items: flex-end / flex-start / center / strech; -> Strech funciona cuando los elementos no tienen alto fijo
+start es la parte de arriba y end la parte de abajo de los elementos
+justify-content: flex-start / flex-end / center / space-between / space-around
+
+order para poder ordenar los elementos en el contenedor, setea la cantidad de lugares que se va a mover
+
+css-tricks.com
+css3generator.com
+*/
+*{
+	box-sizing: border-box;
+}
+
+section{
+	background: red;
+	display: flex;
+	height: 100px;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+article{
+	
+	height: 100%;
+	border: 1px solid black;
+}
+article#b{
+	order:-1;
+	flex-grow: 2;
+}
+
+
