@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#logo {
+    border: 2px solid red;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    border: 2px solid red;
+    height: 150px;
+}
+
+header nav {
+    border: 2px solid red;
+    float: right;
+}
+
+aside {
+    border: 2px solid white;
+    clear: both;
+    float: left;
+    width: 20%;
+}
+
+main {
+    border: 2px solid yellow;
+    float: left;
+    width: 80%;
+}
+
+main article {
+    width: 50%;
+    border: 2px solid red;
+    float: left;
+}
+
+main article#art3 {
+    width: 100%;
+    clear: both;
+    float: none;
+}
+
+main article article {
+    width: 33.33333333%;
+    float: left;
+}
+
+footer {
+    border: 2px solid red;
+    clear: both;
+}

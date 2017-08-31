@@ -1,0 +1,13 @@
+/*propiedad display: none, block, inline, inline-block 
+para mostrar elementos de bloque como de linea y 
+de linea como de bloque o hacer desaparecer elementos
+*/
+
+div {
+    --tamanio: 5rem;
+    padding: 8%;
+    background-color: green;
+    border: 1px solid brown;
+    display: inline-flex;
+    margin: 0;
+}

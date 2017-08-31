@@ -1,0 +1,82 @@
+/*
+SELECTOR UNIVERSAL "*"
+Selectores de etiqueta
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header,
+main,
+footer {
+    width: 800px;
+    height: 150px;
+}
+
+main {
+    height: auto;
+    /*margin: 10px 50px 150px 0;
+	la ùnica forma de centrar algo respecto del contenedor de izquierda a derecha
+	se puede centrar solo un elemento*/
+    margin: auto;
+    padding: 70px;
+}
+
+p {
+    color: white;
+}
+
+h1,
+h2 {
+    color: yellow;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+/*Selector de ID*/
+
+p#unico {
+    background-color: yellow;
+    color: black;
+}
+
+
+/*Selectores básicos: de etiqueta, de clase, de id
+de clase: reservo propiedades y valores para aplicarlos a cualquier etiqueta
+NO se puede empezar los ID o clases con números
+*/
+
+.destacado {
+    font-style: italic;
+    font-family: 'Sedgwick Ave Display';
+    text-decoration: underline;
+}
+
+.claseart {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+main article h1 {
+    color: blue;
+}
+
+
+/*VER GOOGLE FONTS ALGÚN LINK
+@import url('https....');
+
+Se usa igual para importar varios css
+@import url('css/estilos.css');
+*/

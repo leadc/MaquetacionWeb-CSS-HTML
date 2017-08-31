@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: auto;
+    width: 30.19rem;
+    height: 30.15rem;
+    border: .05rem solid brown;
+    text-align: center;
+}
+
+section {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    border: .1rem solid brown;
+    float: left;
+}
+
+
+/*
+Con float hago que el elemento quede por sobre de los otros a la izquierda o la derecha
+Con clear hago que el elemento respete el lugar de los float pero no se les pegue al lado
+*/
+
+section#c {
+    //clear: left;
+}
+
+section.blanco {
+    background-color: white;
+}
+
+section.negro {
+    background-color: black;
+}
