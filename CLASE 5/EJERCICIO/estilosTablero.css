@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+
+#tablero{
+	resize: both;
+
+	background-color: blue;
+	display: flex;
+	flex-direction: column;
+}
+
+.fila{
+	display: flex;
+	flex-direction: row;
+}
+
+.blanco{
+	background-color: white;
+	padding: 12.5%;
+}
+
+.negro{
+	background-color: black;
+	padding: 12.5%;
+}
