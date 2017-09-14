@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 /*USO DE IMAGENES DE FONDO*/
 /*EDITOR BRACKETS*/
@@ -22,9 +23,10 @@ body>header{
 }
 body>header>nav{
 	height: 100%;
-	width: 440px;
+	width: 80%;
 	background: rgba(100,100,200,.5);
 	float: right;
+	padding-left: 10px;
 	
 }
 body>header>nav>ul{
@@ -35,16 +37,36 @@ body>header>nav>ul{
 }
 
 body>header>nav>ul li{
-	display:  inline-block;
+	float: left;
 	text-align: center;
 
-	height: 80px;
-	width: 100px;
-	margin-right: 7px;
+	height: 100%;
+	width: 20%;
+	margin-right: 5%;
 }
 body>header>nav>ul li a{
+	display: block;
+	box-sizing: content-box;
 	text-decoration: none;
 	color: black;
 	font: 16px helvetica,arial,sans-serif;
-	line-height: 80px;
+	line-height: 100%;
+	height: 100%;
+	width: 100px;
+	transition: .8s all;
 }
+
+body>header>nav>ul li a:hover{
+	padding-top: 50%;
+	background-color: red;
+	border-bottom: 2px solid black;
+}
+
+/*OVERFLOW controla el contenido de la caja, por defeto lo que sobresale se vé
+  hidden oculata lo que se sale de la caja
+  scroll le agrega los scroll bar siempre
+  auto agrega el scroll si hace falta
+
+  se puede usar para usar una sola plantilla de imagenes
+  y con los position hacer foco en una en particular usandola de background
+*/
