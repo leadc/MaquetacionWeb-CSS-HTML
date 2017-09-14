@@ -1,27 +1,69 @@
-*{
-	margin:0;
-	box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lobster, sans-serif;
 }
 
-#tablero{
-	resize: both;
 
-	background-color: blue;
-	display: flex;
-	flex-direction: column;
+/*SELECTORES PARA ENCABEZADO*/
+
+header,
+footer {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-basis: row;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: 0 5px 7px 0 #575757;
+    box-shadow: 0 5px 7px 0 #575757;
 }
 
-.fila{
-	display: flex;
-	flex-direction: row;
+header img[alt="Logo Página"] {
+    max-height: 5rem;
+    max-width: 5rem;
 }
 
-.blanco{
-	background-color: white;
-	padding: 12.5%;
+
+/**/
+
+
+/*SELECTORES PARA TABLERO*/
+
+#tablero {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    border: 5px solid brown;
 }
 
-.negro{
-	background-color: black;
-	padding: 12.5%;
+.fila {
+    display: flex;
+    flex-direction: row;
 }
+
+.blanco {
+    background-color: white;
+    padding: 6.25%;
+}
+
+.negro {
+    background-color: black;
+    padding: 6.25%;
+}
+
+div.fila div {
+    transition: .5s;
+}
+
+div.fila div:hover {
+    background-color: rgba(0, 0, 150, .6);
+}
+
+
+/**/
+
+
+/*SELECTORES PARA FOOTER*/
