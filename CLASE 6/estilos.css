@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*USO DE IMAGENES DE FONDO*/
+/*EDITOR BRACKETS*/
+body>header{
+	border: 2px solid black;
+	background-image: url(img/encabezado.jpg);
+	background-repeat: no-repeat;
+	/*background-attachment: fixed; puede ser fixed o scroll para que scrole o no con la página*/
+	background-position: top;
+	background-size: contain;
+	/*cover cubre todo el contenedor y agranda la imagen
+	  contain adapta la imagen al contenedor para que se vea siempre, no funciona con fixed
+	  también se puede poner */
+
+
+	width: 80%;
+	height: 200px;
+	margin: auto;
+}
+body>header>nav{
+	height: 100%;
+	width: 440px;
+	background: rgba(100,100,200,.5);
+	float: right;
+	
+}
+body>header>nav>ul{
+	list-style: none;
+
+	/*list-style-image: ;
+	list-style-position: ;*/
+}
+
+body>header>nav>ul li{
+	display:  inline-block;
+	text-align: center;
+
+	height: 80px;
+	width: 100px;
+	margin-right: 7px;
+}
+body>header>nav>ul li a{
+	text-decoration: none;
+	color: black;
+	font: 16px helvetica,arial,sans-serif;
+	line-height: 80px;
+}
